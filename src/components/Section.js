@@ -1,13 +1,23 @@
 import React from "react";
+import styled from "styled-components";
 
-const Section = (props) => {
+const Section = ({backgroundImg}) => {
 
   return(
-    <div>
-      SECTION
-    </div>
+    <Wrap bgImg={backgroundImg}>
+
+    </Wrap>
   )
 
 }
+
+const Wrap = styled.div`
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-image: ${props => `url('${props.bgImg}')`};
+`
 
 export default Section

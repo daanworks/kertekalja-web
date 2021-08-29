@@ -5,7 +5,7 @@ const Main = () => {
 
   return(
     <div>
-      <Section />
+      <Section backgroundImg='/images/1.jpg' />
       <Section />
       <Section />
     </div>
