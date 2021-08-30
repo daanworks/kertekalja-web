@@ -17,6 +17,11 @@ const Container = styled.div`
   color: #E3DCC9;
   border-radius: 4px;
   cursor: pointer;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+  
 `
 
 export default CTA;

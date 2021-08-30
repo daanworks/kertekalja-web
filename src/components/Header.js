@@ -37,7 +37,7 @@ const Header = () => {
         <ButtonContainer>
           <NavButton id='nav1' className={!isVisible && 'opacity-0'} href='#'>PÁZMÁNDRÓL</NavButton>
           <NavButton id='nav2' className={!isVisible && 'opacity-0'} href='#'>RÓLUNK</NavButton>
-          <CTA id='cta' />
+          <CTA />
         </ButtonContainer>
       </Container>
     </div>
