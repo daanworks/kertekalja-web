@@ -10,20 +10,22 @@ const Header = () => {
 
   const listenToScroll = () => {
     let heightToHideFrom = 20;
-    const winScroll = document.body.scrollTop ||
-      document.documentElement.scrollTop;
+    const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    const nav1 = document.getElementById('nav1')
+    const nav2 = document.getElementById('nav2')
     if (winScroll > heightToHideFrom) {
-      isVisible &&
-      setIsVisible(false);
+      isVisible && setIsVisible(false)
     } else {
-      setIsVisible(true);
+      setIsVisible(true)
+      nav1.href = '#'
+      nav2.href = '#'
     }
   }
 
   useEffect(() => {
-    window.addEventListener("scroll", listenToScroll);
+    window.addEventListener("scroll", listenToScroll)
     return () =>
-      window.removeEventListener("scroll", listenToScroll);
+      window.removeEventListener("scroll", listenToScroll)
   }, [])
 
   return(
@@ -33,8 +35,8 @@ const Header = () => {
             <MainLogo src={logo} />
           </LogoContainer>
         <ButtonContainer>
-          <NavButton className={!isVisible && 'opacity-0'} href='#'>PÁZMÁNDRÓL</NavButton>
-          <NavButton className={!isVisible && 'opacity-0'} href='#'>RÓLUNK</NavButton>
+          <NavButton id='nav1' className={!isVisible && 'opacity-0'} href='#'>PÁZMÁNDRÓL</NavButton>
+          <NavButton id='nav2' className={!isVisible && 'opacity-0'} href='#'>RÓLUNK</NavButton>
           <CTA id='cta' />
         </ButtonContainer>
       </Container>
@@ -73,7 +75,7 @@ const NavButton = styled.a`
   text-decoration: none;
   color: #0A1722;
   margin-right: 20px;
-  transition: opacity 400ms ease-in;
+  transition: all 400ms ease-in;
 
   @media (max-width: 768px) {
     display: none;
