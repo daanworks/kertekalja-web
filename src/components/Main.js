@@ -1,18 +1,26 @@
 import React from "react";
 import Section from "./Section";
 import CTABottom from "./CTABottom";
+import styled from "styled-components";
 
 const Main = () => {
 
   return(
-    <div>
+    <Container>
       <Section backgroundImg='/images/1.jpg' />
-      <Section />
+      <Section backgroundImg='/images/2.jpg' />
       <Section />
       <CTABottom />
-    </div>
+    </Container>
   )
 
 }
+
+const Container = styled.div`
+  overflow: hidden;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  height: 100vh;
+`
 
 export default Main

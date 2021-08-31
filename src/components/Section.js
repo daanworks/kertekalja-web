@@ -18,6 +18,7 @@ const Wrap = styled.div`
   background-position: center bottom;
   background-repeat: no-repeat;
   background-image: ${props => `url('${props.bgImg}')`};
+  scroll-snap-align: center;
 `
 
 export default Section

@@ -3,9 +3,11 @@ import styled from "styled-components";
 
 const CTABottom = () => {
   return(
-    <Container>
-      KAPCSOLATFELVÉTEL
-    </Container>
+    <a href='mailto:info@kertekalja.hu'>
+      <Container>
+        KAPCSOLATFELVÉTEL
+      </Container>
+    </a>
   )
 }
 

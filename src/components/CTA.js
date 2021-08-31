@@ -4,9 +4,11 @@ import styled from "styled-components";
 const CTA = () => {
 
   return(
-    <Container>
-      KAPCSOLATFELVÉTEL
-    </Container>
+    <a href='mailto:info@kertekalja.hu'>
+      <Container>
+        KAPCSOLATFELVÉTEL
+      </Container>
+    </a>
   )
 
 }
