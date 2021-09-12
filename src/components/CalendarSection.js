@@ -41,11 +41,14 @@ const CalendarSection = () => {
       </CalendarCTA>
       {
         show && (
+          <div>
             <CalendarContainer>
               <ClickAwayListener onClickAway={toggleCalendar}>
                 <Calendar locale='hu-HU' tileDisabled={setBookedDates} />
               </ClickAwayListener>
             </CalendarContainer>
+            <DarkMode />
+          </div>
         )
       }
     </div>
@@ -76,6 +79,7 @@ const CalendarContainer = styled.div`
   bottom: 140px;
   right: 40px;
   height: 260px;
+  z-index: 3;
   
   @media (max-width: 768px) {
     top: 88px;
@@ -106,6 +110,21 @@ const CalendarTop = styled.div`
     color: #E3DCC9;
     cursor: pointer;
   }
+`
+
+const DarkMode = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  animation: fadeIn 0.2s;
+  @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  z-index: 2;
 `
 
 export default CalendarSection
