@@ -1,24 +1,51 @@
 import React from "react";
 import styled from "styled-components";
 
-const Section = ({backgroundImg}) => {
+const Section = ({backgroundImg, content, backgroundPstn}) => {
 
   return(
-    <Wrap bgImg={backgroundImg}>
-
+    <Wrap bgImg={backgroundImg} bgPstn={backgroundPstn}>
+      <TextArea>
+        {content}
+      </TextArea>
     </Wrap>
   )
 
 }
 
 const Wrap = styled.div`
+  position: relative;
   width: 100%;
   height: 100vh;
   background-size: cover;
-  background-position: center bottom;
+  background-position: ${props => `${props.bgPstn}`};
   background-repeat: no-repeat;
   background-image: ${props => `url('${props.bgImg}')`};
   scroll-snap-align: center;
+`
+
+const TextArea = styled.div`
+  position: absolute;
+  top: 200px;
+  left: 240px;
+  right: 240px;
+  font-size: 16px;
+  text-align: justify;
+  font-weight: lighter;
+
+  @media (max-width: 768px) {
+    left: 100px;
+    right: 100px;
+    top: 160px;
+  }
+
+  @media (max-width: 576px) {
+    top: 200px;
+    left: 40px;
+    right: 40px;
+    font-size: 12px;
+  }
+  
 `
 
 export default Section

@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React from "react";
 import styled from "styled-components";
 import logo from '../assets/weblogo.svg'
 import CTA from "./CTA";
@@ -6,46 +6,15 @@ import '../App.css';
 
 const Header = () => {
 
-  const [isVisible, setIsVisible] = useState(true)
-  const [isMediumScreen, setIsMediumScreen] = useState(false)
-
-  const listenToScroll = () => {
-    let heightToHideFrom = 20;
-    const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-    if (winScroll > heightToHideFrom) {
-      isVisible && setIsVisible(false)
-    } else {
-      setIsVisible(true)
-    }
-  }
-
-  const screenListener = () => {
-    const screenSize = window.innerWidth
-    if (window.innerWidth < 768) {
-      setIsMediumScreen(true)
-    } else {
-      setIsMediumScreen(false)
-    }
-  }
-
-  useEffect(() => {
-    window.addEventListener("scroll", listenToScroll)
-    window.addEventListener('resize', screenListener)
-    return () => {
-      window.removeEventListener("scroll", listenToScroll)
-      window.removeEventListener('resize', screenListener)
-    }
-  }, [])
-
   return(
     <div>
       <Container>
           <LogoContainer>
-            <MainLogo className={(!isVisible && isMediumScreen) && 'opacity-0'} src={logo} />
+            <MainLogo src={logo} />
           </LogoContainer>
         <ButtonContainer>
-          <NavButton id='nav1' className={!isVisible && 'opacity-0'} href='#'>PÁZMÁNDRÓL</NavButton>
-          <NavButton id='nav2' className={!isVisible && 'opacity-0'} href='#'>RÓLUNK</NavButton>
+          <NavButton href='#'>PÁZMÁNDRÓL</NavButton>
+          <NavButton href='#'>RÓLUNK</NavButton>
           <CTA />
         </ButtonContainer>
       </Container>
@@ -90,7 +59,7 @@ const NavButton = styled.a`
   color: #0A1722;
   margin-right: 20px;
   transition: all 400ms ease-in;
-
+  
   @media (max-width: 768px) {
     display: none;
   }
