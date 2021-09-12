@@ -33,9 +33,13 @@ const TextArea = styled.div`
   text-align: justify;
   font-weight: lighter;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     left: 100px;
     right: 100px;
+    top: 200px;
+  }
+
+  @media (max-width: 768px) {
     top: 160px;
   }
 
