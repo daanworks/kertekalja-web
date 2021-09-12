@@ -20,6 +20,10 @@
   color: var(--light) !important;
 }
 
+.text-dark {
+  color: var(--dark) !important;
+}
+
 .rotate15 {
   transform: rotate(15deg);
 }

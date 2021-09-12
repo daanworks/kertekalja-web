@@ -5,11 +5,13 @@ import CTABottom from "./CTABottom";
 import styled from "styled-components";
 import text from "../text/text";
 import CalendarSection from "./CalendarSection";
+import CalendarTop from "./CalendarTop";
 
 const Main = () => {
 
   return(
     <Container>
+      <CalendarTop />
       <Section backgroundImg='/images/2.jpg' content={text.aboutPazmand} backgroundPstn='center top' />
       <Section backgroundImg='/images/1.jpg' content={text.aboutUs} backgroundPstn='center bottom' />
       <CTABottom />
