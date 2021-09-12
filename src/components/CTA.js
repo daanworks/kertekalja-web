@@ -4,7 +4,7 @@ import styled from "styled-components";
 const CTA = () => {
 
   return(
-    <a style={{'text-decoration': 'none'}} href='mailto:info@kertekalja.hu'>
+    <a style={{'textDecoration': 'none'}} href='mailto:info@kertekalja.hu'>
       <Container>
         KAPCSOLATFELVÉTEL
       </Container>

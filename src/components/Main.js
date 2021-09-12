@@ -2,7 +2,7 @@ import React from "react";
 import Section from "./Section";
 import CTABottom from "./CTABottom";
 import styled from "styled-components";
-import text from "../text/text";
+import text from "../utils/text";
 import CalendarSection from "./CalendarSection";
 
 

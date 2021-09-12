@@ -6,6 +6,8 @@ import 'react-calendar/dist/Calendar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCalendarAlt as farCalendarAlt } from "@fortawesome/free-regular-svg-icons";
 import {ClickAwayListener} from "@material-ui/core";
+import bookedDates from "../utils/bookedDates";
+import { differenceInCalendarDays } from "date-fns";
 
 const CalendarSection = () => {
 
@@ -16,6 +18,16 @@ const CalendarSection = () => {
       setShow(false)
     } else {
       setShow(true)
+    }
+  }
+
+  const isSameDay = (a, b) => {
+    return differenceInCalendarDays(a, b) === 0;
+  }
+
+  const setBookedDates = ({ date, view }) => {
+    if (view === 'month') {
+      return bookedDates.find(dDate => isSameDay(dDate, date))
     }
   }
 
@@ -31,7 +43,7 @@ const CalendarSection = () => {
         show && (
             <CalendarContainer>
               <ClickAwayListener onClickAway={toggleCalendar}>
-                <Calendar locale='hu-HU' />
+                <Calendar locale='hu-HU' tileDisabled={setBookedDates} />
               </ClickAwayListener>
             </CalendarContainer>
         )
