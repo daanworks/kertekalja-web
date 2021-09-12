@@ -21,7 +21,7 @@ const CalendarSection = () => {
       {
         show && (
           <CalendarContainer>
-            <Calendar />
+            <Calendar locale='hu-HU' />
           </CalendarContainer>
         )
       }
