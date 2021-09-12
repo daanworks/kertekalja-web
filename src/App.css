@@ -10,15 +10,16 @@
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: subpixel-antialiased;
   font-size: 12px;
-  color: var(--dark);
 }
 
-.opacity-0 {
-  opacity: 0;
-  cursor: default;
-  pointer-events: none;
+.bg-dark {
+  background-color: var(--dark);
 }
 
-.display-none {
-  display: none;
+.text-light {
+  color: var(--light) !important;
+}
+
+.rotate15 {
+  transform: rotate(15deg);
 }

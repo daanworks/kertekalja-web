@@ -4,6 +4,7 @@ import 'react-calendar/dist/Calendar.css';
 import CTABottom from "./CTABottom";
 import styled from "styled-components";
 import text from "../text/text";
+import CalendarSection from "./CalendarSection";
 
 const Main = () => {
 
@@ -12,6 +13,7 @@ const Main = () => {
       <Section backgroundImg='/images/2.jpg' content={text.aboutPazmand} backgroundPstn='center top' />
       <Section backgroundImg='/images/1.jpg' content={text.aboutUs} backgroundPstn='center bottom' />
       <CTABottom />
+      <CalendarSection />
     </Container>
   )
 
