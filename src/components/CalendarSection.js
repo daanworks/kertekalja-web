@@ -63,7 +63,8 @@ const CalendarContainer = styled.div`
   position: absolute;
   bottom: 140px;
   right: 40px;
-
+  height: 260px;
+  
   @media (max-width: 768px) {
     top: 88px;
   }
@@ -73,7 +74,6 @@ const CalendarContainer = styled.div`
     right: 0;
     display: flex;
     justify-content: center;
-    height: 270px;
   }
   
 `
