@@ -10,6 +10,7 @@
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: subpixel-antialiased;
   font-size: 12px;
+  user-select: none;
 }
 
 .bg-dark {

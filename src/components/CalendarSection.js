@@ -29,11 +29,11 @@ const CalendarSection = () => {
       </CalendarCTA>
       {
         show && (
-          <ClickAwayListener onClickAway={toggleCalendar}>
             <CalendarContainer>
-              <Calendar locale='hu-HU' />
+              <ClickAwayListener onClickAway={toggleCalendar}>
+                <Calendar locale='hu-HU' />
+              </ClickAwayListener>
             </CalendarContainer>
-          </ClickAwayListener>
         )
       }
     </div>
