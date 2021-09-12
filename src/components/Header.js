@@ -13,8 +13,8 @@ const Header = () => {
             <MainLogo src={logo} />
           </LogoContainer>
         <ButtonContainer>
-          <NavButton href='#'>PÁZMÁNDRÓL</NavButton>
-          <NavButton href='#'>RÓLUNK</NavButton>
+          <NavButton href='#aboutPazmand'>PÁZMÁNDRÓL</NavButton>
+          <NavButton href='#aboutUs'>RÓLUNK</NavButton>
           <CTA />
         </ButtonContainer>
       </Container>

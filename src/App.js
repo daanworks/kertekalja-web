@@ -8,14 +8,14 @@ import {useEffect} from "react";
 function App() {
 
   useEffect(() => {
-    document.title = 'Kertek Alja Rendezvényhelyszín'
+    document.title = 'Kertek Alja'
     let link = document.querySelector("link[rel~='icon']");
     if (!link) {
       link = document.createElement('link');
       link.rel = 'icon';
       document.getElementsByTagName('head')[0].appendChild(link);
     }
-    link.href = '/public/favicon.png';
+    link.href = '/public/favicon.png?v=2';
   }, [])
 
   return (

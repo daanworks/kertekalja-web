@@ -5,28 +5,38 @@ import '../App.css'
 import 'react-calendar/dist/Calendar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCalendarAlt as farCalendarAlt } from "@fortawesome/free-regular-svg-icons";
+import {ClickAwayListener} from "@material-ui/core";
 
 const CalendarSection = () => {
 
   const [show, setShow] = useState(false);
 
+  const toggleCalendar = () => {
+    if (show) {
+      setShow(false)
+    } else {
+      setShow(true)
+    }
+  }
+
   return(
     <div>
-      <CalendarTop onClick={() => setShow(!show)}>
+      <CalendarTop onClick={toggleCalendar}>
         <FontAwesomeIcon icon={farCalendarAlt} className='text-dark rotate15' size='2x' />
       </CalendarTop>
-      <CalendarCTA className='bg-dark' onClick={() => setShow(!show)}>
+      <CalendarCTA className='bg-dark' onClick={toggleCalendar}>
         <FontAwesomeIcon icon={farCalendarAlt} size='3x' className='text-light rotate15' />
       </CalendarCTA>
       {
         show && (
-          <CalendarContainer>
-            <Calendar locale='hu-HU' />
-          </CalendarContainer>
+          <ClickAwayListener onClickAway={toggleCalendar}>
+            <CalendarContainer>
+              <Calendar locale='hu-HU' />
+            </CalendarContainer>
+          </ClickAwayListener>
         )
       }
     </div>
-
   )
 
 }

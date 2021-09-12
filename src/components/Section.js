@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 
-const Section = ({backgroundImg, content, backgroundPstn}) => {
+const Section = ({backgroundImg, content, backgroundPstn, hrefId}) => {
 
   return(
-    <Wrap bgImg={backgroundImg} bgPstn={backgroundPstn}>
+    <Wrap bgImg={backgroundImg} bgPstn={backgroundPstn} id={hrefId}>
       <TextArea>
         {content}
       </TextArea>

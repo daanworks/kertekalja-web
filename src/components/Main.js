@@ -10,8 +10,8 @@ const Main = () => {
 
   return(
     <Container>
-      <Section backgroundImg='/images/2.jpg' content={text.aboutPazmand} backgroundPstn='center top' />
-      <Section backgroundImg='/images/1.jpg' content={text.aboutUs} backgroundPstn='center bottom' />
+      <Section hrefId='aboutPazmand' backgroundImg='/images/2.jpg' content={text.aboutPazmand} backgroundPstn='center top' />
+      <Section hrefId='aboutUs' backgroundImg='/images/1.jpg' content={text.aboutUs} backgroundPstn='center bottom' />
       <CTABottom />
       <CalendarSection />
     </Container>
