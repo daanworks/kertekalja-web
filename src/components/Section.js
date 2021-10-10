@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 
-const Section = ({backgroundImg, content, backgroundPstn, hrefId}) => {
+const Section = ({backgroundImage, content, backgroundPosition, id}) => {
 
   return(
-    <Wrap bgImg={backgroundImg} bgPstn={backgroundPstn} id={hrefId}>
+    <Wrap backgroundImage={backgroundImage} backgroundPosition={backgroundPosition} id={id}>
       <TextArea>
         {content}
       </TextArea>
@@ -18,9 +18,9 @@ const Wrap = styled.div`
   width: 100%;
   height: 100vh;
   background-size: cover;
-  background-position: ${props => `${props.bgPstn}`};
+  background-position: ${props => `${props.backgroundPosition}`};
   background-repeat: no-repeat;
-  background-image: ${props => `url('${props.bgImg}')`};
+  background-image: ${props => `url('${props.backgroundImage}')`};
   scroll-snap-align: center;
 `
 

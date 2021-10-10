@@ -1,4 +1,4 @@
-// !!!MOTHS STARTS WITH 0 INDEX!!!
+// months starts with zero index
 
 const bookedDates = [
   new Date(2021, 8, 13),
