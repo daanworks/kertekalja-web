@@ -3,6 +3,8 @@ import styled from "styled-components";
 import logo from '../assets/weblogo.svg'
 import CTA from "./CTA";
 import '../App.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faFacebook, faInstagram} from "@fortawesome/free-brands-svg-icons"
 
 const Header = () => {
 
@@ -13,8 +15,12 @@ const Header = () => {
             <MainLogo src={logo} />
           </LogoContainer>
         <ButtonContainer>
-          <NavButton href='#aboutPazmand'>PÁZMÁNDRÓL</NavButton>
-          <NavButton href='#aboutUs'>RÓLUNK</NavButton>
+          <a href='https://facebook.com/kertekalja' target='_blank' rel="noreferrer">
+            <FontAwesomeIcon icon={faFacebook} size='2x' style={{color: '#0A1722'}} />
+          </a>
+          <a href='https://instagram.com/kertekalja' target='_blank' rel="noreferrer">
+            <FontAwesomeIcon icon={faInstagram} size='2x' style={{color: '#0A1722'}} />
+          </a>
           <CTA />
         </ButtonContainer>
       </Container>
@@ -27,7 +33,7 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -35,6 +41,7 @@ const Container = styled.div`
   width: 100%;
   height: 92px;
   letter-spacing: 0.4px;
+  font-size: 12px;
 `
 
 const LogoContainer = styled.div`
@@ -52,14 +59,9 @@ const LogoContainer = styled.div`
 const ButtonContainer = styled.div`
   display: flex;
   align-items: center;
+  gap: 28px;
   margin-right: 40px;
-`
-const NavButton = styled.a`
-  text-decoration: none;
-  color: #0A1722;
-  margin-right: 20px;
-  transition: all 400ms ease-in;
-  
+
   @media (max-width: 768px) {
     display: none;
   }

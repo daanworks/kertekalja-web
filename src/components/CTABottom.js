@@ -30,7 +30,13 @@ const Container = styled.div`
     color: #E3DCC9;
     border-radius: 4px;
     cursor: pointer;
+    box-shadow: 0 8px 32px 0 rgba( 10, 23, 34, 0.37 );
   }
+
+  @media(max-width: 430px) {
+    font-size: small;
+  }
+  
 `
 
 export default CTABottom

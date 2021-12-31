@@ -6,11 +6,9 @@
 }
 
 * {
-  font-family: Open Sans;
+  font-family: Open Sans, sans-serif;
   -moz-osx-font-smoothing: auto;
   -webkit-font-smoothing: subpixel-antialiased;
-  font-size: 12px;
-  user-select: none;
 }
 
 .bg-dark {

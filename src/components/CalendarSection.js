@@ -6,7 +6,7 @@ import 'react-calendar/dist/Calendar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCalendarAlt as farCalendarAlt } from "@fortawesome/free-regular-svg-icons";
 import {ClickAwayListener} from "@material-ui/core";
-import bookedDates from "../utils/bookedDates";
+import bookedDates from "../config/bookedDates";
 import { differenceInCalendarDays } from "date-fns";
 
 const CalendarSection = () => {
@@ -37,7 +37,7 @@ const CalendarSection = () => {
         <FontAwesomeIcon icon={farCalendarAlt} className='text-dark rotate15' size='2x' />
       </CalendarTop>
       <CalendarCTA className='bg-dark' onClick={toggleCalendar}>
-        <FontAwesomeIcon icon={farCalendarAlt} size='3x' className='text-light rotate15' />
+        <FontAwesomeIcon icon={farCalendarAlt} size='2x' className='text-light rotate15' />
       </CalendarCTA>
       {
         show && (
@@ -60,13 +60,14 @@ const CalendarCTA = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
+  position: fixed;
   bottom: 40px;
   right: 40px;
-  width: 88px;
-  height: 88px;
+  width: 72px;
+  height: 72px;
   border-radius: 50%;
   cursor: pointer;
+  z-index: 3;
 
   @media (max-width: 768px) {
     display: none;
@@ -75,10 +76,10 @@ const CalendarCTA = styled.div`
 `
 
 const CalendarContainer = styled.div`
-  position: absolute;
-  bottom: 140px;
+  position: fixed;
+  bottom: 164px;
   right: 40px;
-  height: 260px;
+  height: 286px;
   z-index: 3;
   
   @media (max-width: 768px) {
@@ -110,6 +111,11 @@ const CalendarTop = styled.div`
     color: #E3DCC9;
     cursor: pointer;
   }
+  :focus {
+    outline: none;
+    box-shadow: none;
+  }
+
 `
 
 const DarkMode = styled.div`

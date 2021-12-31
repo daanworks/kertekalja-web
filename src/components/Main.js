@@ -1,29 +1,34 @@
 import React from "react";
-import Section from "./Section";
 import CTABottom from "./CTABottom";
-import styled from "styled-components";
-import text from "../utils/text";
-import CalendarSection from "./CalendarSection";
-
+import Image from "./Image";
+import Quote from "./Quote";
+import Gallery from "./Gallery";
+import {quotes} from "../config/quotes";
+import {galleries} from "../config/galleries";
+import {images} from "../config/images";
+import QandA from "./QandA";
 
 const Main = () => {
 
   return(
-    <Container>
-      <Section id='aboutPazmand' backgroundImage='/images/2.jpg' content={text.aboutPazmand} backgroundPosition='center top' />
-      <Section id='aboutUs' backgroundImage='/images/1.jpg' content={text.aboutUs} backgroundPosition='center bottom' />
+    <div>
+      <Image bgImg={images.find(image => image.id === 1).bgImg} bgPstn={'center bottom'} />
+      <Quote
+        primaryText={quotes.find(quote => quote.id === 1).primaryText}
+        secondaryText={quotes.find(quote => quote.id === 1).secondaryText}
+        bgImg={quotes.find(quote => quote.id === 1).bgImg}
+      />
+      <Gallery
+        images={galleries.find(gallery => gallery.id === 1).images}
+        bgImg={galleries.find(gallery => gallery.id === 1).background}
+      />
+      <Image bgImg={images.find(image => image.id === 2).bgImg} text={images.find(image => image.id === 2).text} bgPstn={'center'} />
+      <QandA />
       <CTABottom />
-      <CalendarSection />
-    </Container>
+      {/*<CalendarSection />*/}
+    </div>
   )
 
 }
-
-const Container = styled.div`
-  overflow: hidden;
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
-  height: 100vh;
-`
 
 export default Main
