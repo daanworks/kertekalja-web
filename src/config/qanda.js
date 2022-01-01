@@ -1,26 +1,26 @@
 export const qanda = [
   {
-    question: 'Hany eves a kapitany?',
-    answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor '
+    question: 'Mik a legfontosabb tudnivalók rólunk?',
+    answer: 'A Kertek Alja a természet lágy ölén, négy hektáron fekszik. Otthont ad egy tónak, illetve egy szigetnek is, amely ideális helyszíne lehet a polgári ceremóniának.'
   },
   {
-    question: 'Hany eves a kapitany?',
-    answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation t labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud  ullamco laboris  nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'
+    question: 'Van fedett épület a helyszínen?',
+    answer: 'Jelenleg épülettel nem rendelkezünk, sátras esküvők megtartására van lehetőség.'
   },
   {
-    question: 'Hany eves a kapitany?',
-    answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'
+    question: 'Milyen lehetőségek vannak parkolásra?',
+    answer: 'A helyszín közvetlen bejáratánál kialakításra került egy privát parkoló, amely 50 autó befogadására képes.'
   },
   {
-    question: 'Hany eves a kapitany?',
-    answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'
+    question: 'Van saját éttermetek?',
+    answer: 'Nem készítünk ételt, illetve kizárólagosságunk sincs semmilyen partnerrel.'
   },
   {
-    question: 'Hany eves a kapitany?',
-    answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'
+    question: 'Van korlátozás a létszám tekintetében?',
+    answer: 'A családias hangulatú, kisebb esküvőtől a nagy, akár kétszáz fős lagziig tudjuk a helyszínt biztosítani.'
   },
   {
-    question: 'Hany eves a kapitany?',
-    answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'
-  },
+    question: 'Milyen eseményeket lehet még tartani nálunk?',
+    answer: 'Családi és baráti összejövetelek, születésnapok, állófogadások, céges rendezvények, fesztiválok megtartására is van lehetőség.'
+  }
 ]

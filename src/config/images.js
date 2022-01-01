@@ -9,6 +9,6 @@ export const images = [
     title: 'A faluról',
     text: 'Pázmánd Budapesttől 50 km-re található az M7 autópálya mellett. Az Etyek–Budai borvidék részeként fontos ' +
       'szerepet játszik a magyar borkultúra megújításában és hagyományainak megőrzésében. A faluban található katolikus templom, ' +
-      ''
+      'házasságkötő terem, illetve több kiadó apartmanház is.'
   }
 ]
