@@ -17,7 +17,7 @@ function App() {
       link.rel = 'icon';
       document.getElementsByTagName('head')[0].appendChild(link);
     }
-    link.href = '/public/favicon.png?v=2';
+    link.href = '/public/favicon-16x16.png?v=2';
   }, [])
 
   return (
