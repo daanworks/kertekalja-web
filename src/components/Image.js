@@ -1,13 +1,16 @@
 import React from "react";
 import styled from "styled-components";
 
-const Image = ({bgImg, bgPstn, text}) => {
+const Image = ({bgImg, bgPstn, text, title}) => {
 
   return(
     <Container bgImg={bgImg} bgPstn={bgPstn}>
       {
-        text && (
-          <Text>{text}</Text>
+        text && title && (
+          <Text>
+            <Title>{title}</Title>
+            {text}
+          </Text>
         )
       }
     </Container>
@@ -52,6 +55,11 @@ const Text = styled.div`
     width: 60%;
   }
   
+`
+
+const Title = styled.h2`
+  margin-top: 0;
+  font-style: italic;
 `
 
 export default Image

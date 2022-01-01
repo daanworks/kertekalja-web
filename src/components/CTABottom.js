@@ -5,7 +5,7 @@ const CTABottom = () => {
   return(
     <a href='mailto:info@kertekalja.hu'>
       <Container>
-        KAPCSOLATFELVÉTEL
+        ÍRJ NEKÜNK
       </Container>
     </a>
   )

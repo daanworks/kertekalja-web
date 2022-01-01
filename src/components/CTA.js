@@ -6,7 +6,7 @@ const CTA = () => {
   return(
     <a style={{'textDecoration': 'none'}} href='mailto:info@kertekalja.hu'>
       <Container>
-        KAPCSOLATFELVÉTEL
+        ÍRJ NEKÜNK
       </Container>
     </a>
   )
@@ -14,7 +14,7 @@ const CTA = () => {
 }
 
 const Container = styled.div`
-  padding: 16px;
+  padding: 16px 28px;
   background: #0A1722;
   box-shadow: 0 8px 32px 0 rgba( 10, 23, 34, 0.37 );
   color: #E3DCC9;

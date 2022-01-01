@@ -30,6 +30,7 @@ const Footer = (props) => {
 const Container = styled.div`
   width: 100%;
   height: 20vh;
+  min-height: 180px;
   background: #0A1722;
   color: #E3DCC9;
   display: flex;

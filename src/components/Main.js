@@ -22,7 +22,12 @@ const Main = () => {
         images={galleries.find(gallery => gallery.id === 1).images}
         bgImg={galleries.find(gallery => gallery.id === 1).background}
       />
-      <Image bgImg={images.find(image => image.id === 2).bgImg} text={images.find(image => image.id === 2).text} bgPstn={'center'} />
+      <Image
+        bgImg={images.find(image => image.id === 2).bgImg}
+        text={images.find(image => image.id === 2).text}
+        title={images.find(image => image.id === 2).title}
+        bgPstn={'center'}
+      />
       <QandA />
       <CTABottom />
       {/*<CalendarSection />*/}
