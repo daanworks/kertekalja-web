@@ -7,6 +7,7 @@ import {quotes} from "../config/quotes";
 import {galleries} from "../config/galleries";
 import {images} from "../config/images";
 import QandA from "./QandA";
+import SimpleImage from "./SimpleImage";
 
 const Main = () => {
 
@@ -29,6 +30,7 @@ const Main = () => {
         bgPstn={'center'}
       />
       <QandA />
+      {/*<SimpleImage image={images.find(image => image.id === 3).image} />*/}
       <CTABottom />
       {/*<CalendarSection />*/}
     </div>
