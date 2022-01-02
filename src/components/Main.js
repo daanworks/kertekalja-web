@@ -7,30 +7,33 @@ import {quotes} from "../config/quotes";
 import {galleries} from "../config/galleries";
 import {images} from "../config/images";
 import QandA from "./QandA";
-import SimpleImage from "./SimpleImage";
 
 const Main = () => {
 
+  const find = (array, id, type) => {
+    if (!array || !id) return
+    return array.find(element => element.id === id)[type]
+  }
+
   return(
     <div>
-      <Image bgImg={images.find(image => image.id === 1).bgImg} bgPstn={'center bottom'} />
+      <Image bgImg={find(images, 1, 'bgImg')} bgPstn={'center bottom'} />
       <Quote
-        primaryText={quotes.find(quote => quote.id === 1).primaryText}
-        secondaryText={quotes.find(quote => quote.id === 1).secondaryText}
-        bgImg={quotes.find(quote => quote.id === 1).bgImg}
+        primaryText={find(quotes, 1, 'primaryText')}
+        secondaryText={find(quotes, 1, 'secondaryText')}
+        bgImg={find(quotes, 1, 'bgImg')}
       />
       <Gallery
-        images={galleries.find(gallery => gallery.id === 1).images}
-        bgImg={galleries.find(gallery => gallery.id === 1).background}
+        images={find(galleries, 1, 'images')}
+        bgImg={find(galleries, 1, 'background')}
       />
       <Image
-        bgImg={images.find(image => image.id === 2).bgImg}
-        text={images.find(image => image.id === 2).text}
-        title={images.find(image => image.id === 2).title}
+        bgImg={find(images, 2, 'bgImg')}
+        text={find(images, 2, 'text')}
+        title={find(images, 2, 'title')}
         bgPstn={'center'}
       />
       <QandA />
-      {/*<SimpleImage image={images.find(image => image.id === 3).image} />*/}
       <CTABottom />
       {/*<CalendarSection />*/}
     </div>

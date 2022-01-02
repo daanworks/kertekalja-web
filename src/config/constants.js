@@ -1,5 +1,12 @@
-export const IMAGE = 'IMAGE'
+export const BACKGROUND_IMAGE = 'BACKGROUND_IMAGE'
 
-export const QUOTE = 'QUOTE'
+export const PRIMARY_TEXT = 'PRIMARY_TEXT'
 
-export const GALLERY = 'GALLERY'
+export const SECONDARY_TEXT = 'SECONDARY_TEXT'
+
+export const IMAGES = 'IMAGES'
+
+export const TITLE = 'TITLE'
+
+export const TEXT = 'TEXT'
+

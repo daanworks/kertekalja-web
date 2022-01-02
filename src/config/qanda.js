@@ -5,15 +5,15 @@ export const qanda = [
   },
   {
     question: 'Van fedett épület a helyszínen?',
-    answer: 'Jelenleg épülettel nem rendelkezünk, sátras esküvők megtartására van lehetőség.'
+    answer: 'Jelenleg épülettel nem rendelkezünk, sátras esküvők megtartására van lehetőség. Ajánlatunkban rugalmasan számos sátorlehetőség közül választhattok!'
   },
   {
     question: 'Milyen lehetőségek vannak parkolásra?',
     answer: 'A helyszín közvetlen bejáratánál kialakításra került egy privát parkoló, amely 50 autó befogadására képes.'
   },
   {
-    question: 'Van saját éttermetek?',
-    answer: 'Nem készítünk ételt, illetve kizárólagosságunk sincs semmilyen partnerrel.'
+    question: 'Étterem, catering is rendelkezésre áll?',
+    answer: 'Nem készítünk ételt, illetve kizárólagosságunk sincs semmilyen partnerrel, könnyedén tudunk alkalmazkodni és segíteni a megfelelő szolgáltató kiválasztásában.'
   },
   {
     question: 'Van korlátozás a létszám tekintetében?',

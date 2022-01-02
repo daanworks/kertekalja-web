@@ -25,12 +25,13 @@ const Container = styled.div`
   width: 100%;
   height: 100vh;
   background-size: cover;
-  background-position: ${props => `${props.bgPstn}`};
+  background-position: center;
   background-repeat: no-repeat;
   background-image: ${props => `url('${props.bgImg}')`};
 
   @media(max-width: 430px) {
     align-items: center;
+    background-position: ${props => `${props.bgPstn}`};
   }
   
 `
