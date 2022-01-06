@@ -63,7 +63,8 @@ const ButtonContainer = styled.div`
   margin-right: 40px;
 
   @media (max-width: 768px) {
-    display: none;
+    //display: none;
+    margin-right: 0;
   }
   
 `

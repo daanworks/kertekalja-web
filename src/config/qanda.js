@@ -1,11 +1,11 @@
 export const qanda = [
   {
     question: 'Mik a legfontosabb tudnivalók rólunk?',
-    answer: 'A Kertek Alja a természet lágy ölén, négy hektáron fekszik. Otthont ad egy tónak, illetve egy szigetnek is, amely ideális helyszíne lehet a polgári ceremóniának.'
+    answer: 'A Kertek Alja a természet lágy ölén, négy hektáron fekszik. Otthont ad egy tónak, illetve egy szigetnek is, amely ideális helyszíne lehet a polgári ceremóniának, vagy akár a hajnalig tartó bulinak.'
   },
   {
     question: 'Van fedett épület a helyszínen?',
-    answer: 'Jelenleg épülettel nem rendelkezünk, sátras esküvők megtartására van lehetőség. Ajánlatunkban rugalmasan számos sátorlehetőség közül választhattok!'
+    answer: 'Jelenleg épülettel nem rendelkezünk, sátras esküvők megtartására van lehetőség. Ajánlatunkban számos sátorlehetőség közül választhattok, illetve ettől függetlenül az esemény lebonyolításához természetesen áram, víz és mellékhelyiségek is a rendelkezésre állnak.'
   },
   {
     question: 'Milyen lehetőségek vannak parkolásra?',

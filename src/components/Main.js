@@ -7,6 +7,7 @@ import {quotes} from "../config/quotes";
 import {galleries} from "../config/galleries";
 import {images} from "../config/images";
 import QandA from "./QandA";
+import SimpleImage from "./SimpleImage";
 
 const Main = () => {
 
@@ -22,6 +23,9 @@ const Main = () => {
         primaryText={find(quotes, 1, 'primaryText')}
         secondaryText={find(quotes, 1, 'secondaryText')}
         bgImg={find(quotes, 1, 'bgImg')}
+      />
+      <SimpleImage
+        image={find(images, 3, 'image')}
       />
       <Gallery
         images={find(galleries, 1, 'images')}

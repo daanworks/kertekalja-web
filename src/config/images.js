@@ -13,6 +13,6 @@ export const images = [
   },
   {
     id: 3,
-    image: '/images/cover.jpg'
+    image: '/images/landscape.jpg'
   }
 ]
