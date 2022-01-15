@@ -4,11 +4,13 @@ const Gallery = (props) => {
 
   return(
     <Container>
-      {
-        props.images.map(image => (
-          <Image bgImg={image} />
-        ))
-      }
+      <Wrapper>
+        {
+          props.images.map(image => (
+            <Image bgImg={image} />
+          ))
+        }
+      </Wrapper>
     </Container>
   )
 }
@@ -19,9 +21,16 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 3rem;
   flex-wrap: wrap;
   padding: 3rem 0;
+`
+
+const Wrapper = styled.div`
+  max-width: 1440px;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
 `
 
 const Image = styled.div`

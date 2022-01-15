@@ -5,14 +5,16 @@ const QandA = (props) => {
   return(
     <Container>
       <Cover />
-      {
-        qanda.map(card => (
-          <Card>
-            <Question>{card.question}</Question>
-            <Answer>{card.answer}</Answer>
-          </Card>
-        ))
-      }
+      <Wrapper>
+        {
+          qanda.map(card => (
+            <Card>
+              <Question>{card.question}</Question>
+              <Answer>{card.answer}</Answer>
+            </Card>
+          ))
+        }
+      </Wrapper>
     </Container>
   )
 }
@@ -22,13 +24,20 @@ const Container = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
-  gap: 3rem;
-  flex-wrap: wrap;
-  padding: 3rem 0;
+  align-items: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url('/images/qanda.jpg');
   background-position: center;
+`
+
+const Wrapper = styled.div`
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+  padding: 3rem 0;
+  max-width: 1440px;
+  justify-content: center;
 
   @media(max-width: 430px) {
     gap: 2rem

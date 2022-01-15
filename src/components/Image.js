@@ -39,8 +39,8 @@ const Text = styled.div`
   position: absolute;
   padding: 2rem;
   top: 20%;
-  left: 20%;
-  right: 20%;
+  left: 25%;
+  right: 25%;
   background: rgba(10, 23, 34, 0.8);
   color: #E3DCC9;
   border-radius: 8px;
