@@ -20,8 +20,8 @@ const Container = styled.div`
     justify-content: center;
     position: fixed;
     bottom: 16px;
-    right: 40px;
-    left: 40px;
+    right: 28px;
+    left: 28px;
     z-index: 1;
     height: 16px;
     letter-spacing: 0.4px;

@@ -6,7 +6,11 @@ export const SECONDARY_TEXT = 'SECONDARY_TEXT'
 
 export const IMAGES = 'IMAGES'
 
+export const IMAGE = 'IMAGE'
+
 export const TITLE = 'TITLE'
 
 export const TEXT = 'TEXT'
+
+export const LINK = 'LINK'
 

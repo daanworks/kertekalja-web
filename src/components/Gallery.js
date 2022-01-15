@@ -3,7 +3,7 @@ import styled from "styled-components";
 const Gallery = (props) => {
 
   return(
-    <Container bgImg={props.bgImg}>
+    <Container>
       {
         props.images.map(image => (
           <Image bgImg={image} />
@@ -27,11 +27,11 @@ const Container = styled.div`
 const Image = styled.div`
   width: 400px;
   height: 400px;
-  background-image: ${props => `url('${props.bgImg}')`};
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   border-radius: 8px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: ${props => `url('${props.bgImg}')`};
   
   @media(max-width: 430px) {
     width: 300px;

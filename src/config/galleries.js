@@ -1,8 +1,9 @@
+import {IMAGES} from "./constants";
+
 export const galleries = [
   {
     id: 1,
-    background: '/images/galleries/1/background.jpg',
-    images: [
+    [IMAGES]: [
       '/images/galleries/1/1.jpg',
       '/images/galleries/1/2.jpg',
       '/images/galleries/1/3.jpg',
