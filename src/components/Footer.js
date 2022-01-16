@@ -22,7 +22,10 @@ const Footer = (props) => {
           <FontAwesomeIcon icon={faInstagram} size='2x' style={{color: '#E3DCC9'}} />
         </a>
       </SocialIcons>
-      <Copyright>Kertek Alja Rendezvényhelyszín © 2022</Copyright>
+      <Notes>
+        Kertek Alja Rendezvényhelyszín © 2022 | created by
+        <a target='_blank' rel="noreferrer" href='http://babinszky.com/'><D src='/images/d.png' width={8} /></a>
+      </Notes>
     </Container>
   )
 }
@@ -51,8 +54,13 @@ const SocialIcons = styled.div`
   gap: 1rem;
 `
 
-const Copyright = styled.div`
+const Notes = styled.div`
   font-size: x-small;
+`
+
+const D = styled.img`
+  width: 8px;
+  margin-left: 4px;
 `
 
 export default Footer
