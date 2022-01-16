@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faFacebook, faInstagram} from "@fortawesome/free-brands-svg-icons"
 import React from "react";
 
-const Footer = (props) => {
+const Footer = () => {
   return(
     <Container>
       <a
@@ -23,8 +23,8 @@ const Footer = (props) => {
         </a>
       </SocialIcons>
       <Notes>
-        Kertek Alja Rendezvényhelyszín © 2022 | created by
-        <a target='_blank' rel="noreferrer" href='http://babinszky.com/'><D src='/images/d.png' width={8} /></a>
+        Kertek Alja Rendezvényhelyszín © 2022 |
+        <a target='_blank' rel="noreferrer" href='http://babinszky.com/'> created by<D src='/images/d.png' width={8} /></a>
       </Notes>
     </Container>
   )
@@ -56,6 +56,10 @@ const SocialIcons = styled.div`
 
 const Notes = styled.div`
   font-size: x-small;
+  a {
+    text-decoration: none;
+    color: #e3dcc9;
+  }
 `
 
 const D = styled.img`
