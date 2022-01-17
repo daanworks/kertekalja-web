@@ -24,7 +24,7 @@ const Footer = () => {
       </SocialIcons>
       <Notes>
         Kertek Alja Rendezvényhelyszín © 2022 |
-        <a target='_blank' rel="noreferrer" href='http://babinszky.com/'> created by<D src='/images/d.png' width={8} /></a>
+        <a target='_blank' rel="noreferrer" href='https://babinszky.com/'> created by<D src='/images/d.png' width={8} /></a>
       </Notes>
     </Container>
   )
