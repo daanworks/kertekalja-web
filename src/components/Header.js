@@ -4,12 +4,35 @@ import CTA from "./CTA";
 import '../App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faFacebook, faInstagram} from "@fortawesome/free-brands-svg-icons"
+import {useCallback, useEffect, useState} from "react";
 
 const Header = () => {
 
+  const [y, setY] = useState(window.scrollY);
+
+  const handleNavigation = useCallback(
+    e => {
+      const window = e.currentTarget;
+      if (y > window.scrollY || window.scrollY < 30) {
+        document.getElementById('container').classList.remove('d-none')
+      } else if (y < window.scrollY) {
+        document.getElementById('container').classList.add('d-none')
+      }
+      setY(window.scrollY);
+    }, [y]
+  );
+
+  useEffect(() => {
+    setY(window.scrollY);
+    window.addEventListener("scroll", handleNavigation);
+    return () => {
+      window.removeEventListener("scroll", handleNavigation);
+    };
+  }, [handleNavigation]);
+
   return(
     <div>
-      <Container>
+      <Container id='container'>
           <LogoContainer>
             <MainLogo src={logo} />
           </LogoContainer>
@@ -32,15 +55,16 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1;
+  z-index: 10000000;
   width: 100%;
   height: 92px;
   letter-spacing: 0.4px;
   font-size: 12px;
+  transition: opacity ease-in-out 400ms;
 `
 
 const LogoContainer = styled.div`

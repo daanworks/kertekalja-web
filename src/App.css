@@ -31,3 +31,7 @@
 .rotate15 {
   transform: rotate(15deg);
 }
+
+.d-none {
+  opacity: 0;
+}

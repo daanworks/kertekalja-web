@@ -6,8 +6,8 @@ const Gallery = (props) => {
     <Container>
       <Wrapper>
         {
-          props.images.map(image => (
-            <Image bgImg={image} />
+          props.images.map((image, index) => (
+            <Image bgImg={image} key={index} />
           ))
         }
       </Wrapper>

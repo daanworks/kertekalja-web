@@ -7,8 +7,8 @@ const QandA = (props) => {
       <Cover />
       <Wrapper>
         {
-          qanda.map(card => (
-            <Card>
+          qanda.map((card, index) => (
+            <Card key={index}>
               <Question>{card.question}</Question>
               <Answer>{card.answer}</Answer>
             </Card>
