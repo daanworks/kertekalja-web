@@ -10,6 +10,7 @@ import {video} from "../config/video";
 import QandA from "./QandA";
 import Video from "./Video";
 import {BACKGROUND_IMAGE, IMAGES, LINK, PRIMARY_TEXT, SECONDARY_TEXT, TEXT, TITLE} from "../config/constants";
+import Partners from "./Partners";
 
 const Main = () => {
 
@@ -40,6 +41,7 @@ const Main = () => {
         bgPstn={'center'}
       />
       <QandA />
+      <Partners />
       <CTABottom />
       {/*<CalendarSection />*/}
     </div>
