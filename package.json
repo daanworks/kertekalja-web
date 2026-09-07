@@ -2,6 +2,9 @@
   "name": "kertekalja-web",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "22.x"
+  },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-brands-svg-icons": "^5.15.4",
@@ -18,7 +21,7 @@
     "react-calendar": "^3.4.0",
     "react-dom": "^17.0.2",
     "react-router-dom": "^5.2.1",
-    "react-scripts": "4.0.3",
+    "react-scripts": "5.0.1",
     "styled-components": "^5.3.1",
     "web-vitals": "^1.0.1"
   },
