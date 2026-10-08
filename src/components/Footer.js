@@ -23,8 +23,8 @@ const Footer = () => {
         </a>
       </SocialIcons>
       <Notes>
-        Kertek Alja Rendezvényhelyszín © 2022 |
-        <a target='_blank' rel="noreferrer" href='https://babinszky.com/'> created by<D src='/images/d.png' width={8} /></a>
+        Kertek Alja Rendezvényhelyszín © {new Date().getFullYear()} |
+        created by<D src='/images/d.png' width={8} />
       </Notes>
     </Container>
   )
